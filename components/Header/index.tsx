@@ -11,12 +11,12 @@ function Header() {
         </Link>
       </div>
       <div className="navbuttons">
-        <Link href={'/'}
+        <Link href={'/login'}
           className="button button_text button_medium"
         >
           Войти
         </Link>
-        <Link href={'/'}
+        <Link href={'/registration'}
           className="button button_filled button_medium"
         >
           Зарегистрироваться
