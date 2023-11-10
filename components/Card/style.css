@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card-image {
+    height: 300px;
+    width: 100%;
+}
+.body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.types {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.40);
+}

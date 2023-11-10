@@ -12,6 +12,7 @@
   backdrop-filter: blur(25px);
   position: sticky;
   inset: 20px;
+  z-index: 10;
 }
 
 .navlinks {
