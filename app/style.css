@@ -1,0 +1,24 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-width: calc(100vw - 20px);
+}
+
+.home-page_hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 500px;
+    margin-top: -80px;
+    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 255, 255, 1) 100%),
+      no-repeat center/100% url("../public/map.png");
+  }
+  
+  .home-page_hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+  }
