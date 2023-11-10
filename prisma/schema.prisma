@@ -7,3 +7,36 @@ datasource db {
   url               = env("DATABASE_URL")
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
+
+model Attraction {
+  id   Int    @id @default(autoincrement())
+  name String
+  desc String
+}
+
+model AttractionType {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model TypesOfAttraction {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Tour {
+  id            Int       @id @default(autoincrement())
+  name          String
+  tour_guide    TourGuide @relation(fields: [tour_guide_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tour_guide_id Int
+}
+
+model TourGuide {
+  id   Int    @id @default(autoincrement())
+  name String
+  tour Tour[]
+}
+
+model PopularTours {
+  id Int @id @default(autoincrement())
+}
