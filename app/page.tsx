@@ -3,11 +3,13 @@
 import "./style.css";
 import Link from "next/link";
 import Card from "@/components/Card/index";
+import SoborPNG from "../public/sobor.png";
 
 export default function Home() {
   const getData = async () => {
     await fetch('/api/tours', {
-      method: 'GET'
+      method: 'GET',
+      body: JSON.stringify({hello: 'world'}),
     })
     
   }
@@ -29,10 +31,10 @@ export default function Home() {
           <h2>Популярные места и события</h2>
         </header>
         <main className="card-section-body">
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={"../public/map.png"}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
+          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={SoborPNG}/>
         </main>
       </section>
       <section className="card-section">

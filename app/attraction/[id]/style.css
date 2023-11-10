@@ -3,8 +3,6 @@
   flex-direction: column;
   gap: 180px;
   min-width: 100vw;
-  position: absolute;
-  top: 0;
 }
 
 .attraction-page_hero {
@@ -17,7 +15,7 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 1) 100%
     ),
-    no-repeat center/100% url("../../../public/tower.png");
+    no-repeat center/100% url("../../../public/map.png");
 }
 
 .attraction-page_hero-center {

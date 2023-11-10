@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 function Card({ image, type, name }) {
   return (
-    <div className="card">
+    <div className="card" >
       <div
-        style={{backgroundImage: `url("${image}")`}}
+        style={{backgroundImage: `url(${image})`}}
         className="card-image"
       >
       </div>
