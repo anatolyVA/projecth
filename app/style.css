@@ -1,24 +1,73 @@
 .home-page {
-    display: flex;
-    flex-direction: column;
-    min-width: calc(100vw - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  min-width: calc(100vw - 20px);
 }
 
 .home-page_hero {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    height: 500px;
-    margin-top: -80px;
-    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 255, 255, 1) 100%),
-      no-repeat center/100% url("../public/map.png");
-  }
-  
-  .home-page_hero-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 40px;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px 20px 20px;
+  height: 500px;
+  width: 100%;
+  margin-top: -80px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1) 100%
+    ),
+    no-repeat center/100% url("../public/map.png");
+}
+
+.home-page_hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 40px;
+}
+.card-section {
+  display: flex;
+  padding: 0 60px;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 1440px;
+}
+.card-section-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
+}
+.card-section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.review-section {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  gap: 40px;
+  min-width: 1440px;
+  height: 400px;
+}
+.review-section_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.review-section_image {
+  display: flex;
+  width: 100%;
+  border-color: azure;
+  border-radius: 16px;
+  background: no-repeat center/100% url("../public/map.png");
+}
