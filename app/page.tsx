@@ -1,8 +1,16 @@
+'use client'
+
 import "./style.css";
 import Link from "next/link";
-import Card from "@/components/Card";
+import Card from "@/components/Card/index";
 
 export default function Home() {
+  const getData = async () => {
+    await fetch('/api/tours', {
+      method: 'GET'
+    })
+    
+  }
   return (
     <main className="home-page">
       <div className="home-page_hero">
@@ -15,10 +23,13 @@ export default function Home() {
       </div>
       <section className="card-section">
         <header className="card-section-header">
+          <button onClick={() => getData()}>
+            ХУЯК
+          </button>
           <h2>Популярные места и события</h2>
         </header>
         <main className="card-section-body">
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
+          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={"../public/map.png"}/>
           <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
           <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
           <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>

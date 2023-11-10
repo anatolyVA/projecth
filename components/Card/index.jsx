@@ -1,19 +1,12 @@
 import React from "react";
 import './style.css'
 import Link from 'next/link'
-type Props = {
-  image: any
-  type: {
-    type1: string
-  }
-  name: string
-};
 
-function Card({ image, type, name }: Props) {
+function Card({ image, type, name }) {
   return (
     <div className="card">
       <div
-        style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.00), #000 100%), url(${image})`}}
+        style={{backgroundImage: `url("${image}")`}}
         className="card-image"
       >
       </div>
