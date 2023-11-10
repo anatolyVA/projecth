@@ -1,7 +1,6 @@
 import React from "react";
 import './style.css'
 import Link from 'next/link'
-import { StaticImageData } from "next/image";
 type Props = {
   image: string;
   type: {
