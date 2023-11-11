@@ -1,6 +1,8 @@
 import "./style.css";
 import Link from "next/link";
-import Card from "@/components/Card";
+import Card from "@/components/Card/index";
+const SoborPNG = "/sobor.png";
+import Image from "next/image";
 
 const fetchData = () => 
   fetch("http://localhost:3000/api/tours", {
@@ -23,13 +25,14 @@ export default async function Home() {
       </div>
       <section className="card-section">
         <header className="card-section-header">
-          <h2></h2>
+          <h2>Популярные места и события</h2>
+          <h2>{data[0].name}</h2>
         </header>
         <main className="card-section-body">
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
         </main>
       </section>
       <section className="card-section">
@@ -38,10 +41,10 @@ export default async function Home() {
           <h2>Популярные экскурсии</h2>
         </header>
         <main className="card-section-body">
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
-          <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
         </main>
       </section>
       <section className="review-section">

@@ -6,17 +6,17 @@ function Header() {
   return (
     <header className="navbar">
       <div className="navlinks">
-        <Link className="navlink" href={'/'}>
+        <Link className="navlink" href='/'>
           Домашняя страница
         </Link>
       </div>
       <div className="navbuttons">
-        <Link href={'/login'}
+        <Link href='/login'
           className="button button_text button_medium"
         >
           Войти
         </Link>
-        <Link href={'/registration'}
+        <Link href='/registration'
           className="button button_filled button_medium"
         >
           Зарегистрироваться
