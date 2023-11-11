@@ -17,10 +17,10 @@ model AttractionPictures {
 
 model Attraction {
   id                 Int                  @id @default(autoincrement())
-  name               String
+  name               String               @db.VarChar(200)
   type               TypeOfAttraction[]
   typeId             Int
-  desc               String
+  desc               String               @db.Text
   AttractionType     AttractionType[]
   AttractionPictures AttractionPictures[]
   TourPictures       TourPictures[]
@@ -28,7 +28,7 @@ model Attraction {
 
 model TypeOfAttraction {
   id             Int              @id @default(autoincrement())
-  name           String
+  name           String           @db.VarChar(200)
   attractions    Attraction[]
   AttractionType AttractionType[]
 }
@@ -51,14 +51,14 @@ model TourPictures {
 
 model Tour {
   id            Int       @id @default(autoincrement())
-  name          String
+  name          String    @db.VarChar(200)
   tour_guide    TourGuide @relation(fields: [tour_guide_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
   tour_guide_id Int
 }
 
 model TourGuide {
   id   Int    @id @default(autoincrement())
-  name String
+  name String @db.VarChar(200)
   tour Tour[]
 }
 
@@ -68,7 +68,7 @@ model PopularTour {
 
 model EventGroup {
   id        Int          @id @default(autoincrement())
-  name      String?
+  name      String?      @db.VarChar(200)
   parent_id Int?
   parent    EventGroup?  @relation("EventGroup", fields: [parent_id], references: [id])
   children  EventGroup[] @relation("EventGroup")
