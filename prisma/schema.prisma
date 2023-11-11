@@ -67,11 +67,11 @@ model PopularTour {
 }
 
 model EventGroup {
-  id        Int      @id @default(autoincrement())
-  parent_id Int
-  name      String
-  type      String
-  date      DateTime @db.Date
+  id        Int          @id @default(autoincrement())
+  name      String?
+  parent_id Int?
+  parent    EventGroup?  @relation("EventGroup", fields: [parent_id], references: [id])
+  children  EventGroup[] @relation("EventGroup")
 }
 
 model DateRange {
