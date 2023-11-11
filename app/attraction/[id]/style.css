@@ -11,11 +11,6 @@
   padding: 100px 20px 20px 20px;
   height: 400px;
   width: 100%;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 1) 100%
-    ),
-    no-repeat center/100% url("/thundertower.png");
 }
 
 .attraction-page_background-center {

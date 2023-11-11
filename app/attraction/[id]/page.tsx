@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { AiOutlineUser } from "react-icons/ai";
 import "./style.css";
+const backgroundPNG = "/thundertower.png"
 type Props = {
   params: {
     id: number;
@@ -11,7 +12,13 @@ type Props = {
 function Attraction({ params: { id } }: Props) {
   return (
     <main className="attraction-page">
-      <div className="attraction-page_background">
+      <div
+        style={{
+          background:
+            `background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 1) 100%), no-repeat center/100% url(${backgroundPNG})`,
+        }}
+        className="attraction-page_background"
+      >
         <div className="attraction-page_background-center">
           <div className="attraction-header">
             <div className="header-items">
