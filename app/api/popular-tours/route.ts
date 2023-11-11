@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const prisma = new PrismaClient()
 
 export async function GET(req: Request) {
-    const tours = await prisma.tour.findMany()
+    const popularTours = prisma.popularTours.findMany()
 
-    return NextResponse.json(tours)
+    return NextResponse.json(popularTours)
 }
