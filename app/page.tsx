@@ -4,10 +4,6 @@ import Card from "@/components/Card/index";
 const SoborPNG = "/sobor.png";
 import Image from "next/image";
 
-const fetchData = () => fetch("http://localhost:3000/api/tours", {
-  cache: "force-cache"
-}).then(res => res.json())
-
 const fetchData = () => 
   fetch("http://localhost:3000/api/tours", {
     cache: "force-cache"
