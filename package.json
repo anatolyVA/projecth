@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.41.1",
+    "@maptiler/sdk": "^1.2.0",
+    "@pbe/react-yandex-maps": "^1.2.5",
     "@prisma/client": "^5.5.2",
     "next": "14.0.2",
     "react": "^18",

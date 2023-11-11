@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1039.39">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: Gilroy-Bold, Gilroy;
+        font-size: 514.69px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 437.49)"><tspan class="cls-2" x="0" y="0">В</tspan><tspan x="307.27" y="0">з</tspan><tspan class="cls-1" x="538.88" y="0">г</tspan><tspan x="734.47" y="0">ляд</tspan></text>
+  <text class="cls-3" transform="translate(330.66 904.02)"><tspan x="0" y="0">в прошлое</tspan></text>
+  <g>
+    <polyline points="2464.98 246.93 2502.53 246.93 2465.64 422.17 2419.46 422.17"/>
+    <polyline points="2436.99 422.17 1907.81 422.17 1907.81 246.93 2476.59 246.93"/>
+    <polygon points="1907.81 537.17 1634 334.55 1907.81 131.93 1907.81 537.17"/>
+    <polyline points="2663.53 422.17 2510.19 422.17 2547.08 246.93 2614.24 246.93"/>
+    <polyline points="2760.14 246.93 2828.42 246.93 2791.54 422.17 2773.05 422.17"/>
+    <polyline points="2699.56 422.17 2737.11 422.17 2740.2 246.93 2641.62 246.93"/>
+    <polyline points="2844.24 246.93 2942.81 246.93 2905.92 422.17 2843.87 422.17"/>
+  </g>
+</svg>

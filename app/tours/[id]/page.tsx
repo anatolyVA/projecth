@@ -1,12 +1,13 @@
 import React from 'react'
-
 type Props = {
-  id: number;
-}
+  params: {
+    id: number;
+  };
+};
 
-function Tour({id} : Props) {
+function Tour({ params: { id } }: Props) {
   return (
-    <div>{id} тура</div>
+    <div>Tour</div>
   )
 }
 

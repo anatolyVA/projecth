@@ -1,8 +1,13 @@
+'use client'
+
 import React from 'react'
+import { YMaps, Map, Placemark  } from '@pbe/react-yandex-maps';
 
 function MapComponent() {
   return (
-    <div>MapComponent</div>
+    <div>
+      
+    </div>
   )
 }
 
