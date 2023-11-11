@@ -9,8 +9,6 @@
   position: absolute;
   height: 400px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
-    no-repeat center/100% url("/thundertower.png");
   z-index: -10;
 }
 
