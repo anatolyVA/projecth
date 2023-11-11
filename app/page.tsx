@@ -23,7 +23,7 @@ export default async function Home() {
       </div>
       <section className="card-section">
         <header className="card-section-header">
-          <h2>{data[0].name}</h2>
+          <h2></h2>
         </header>
         <main className="card-section-body">
           <Card name="Успенский собор" type={{type1: 'Церкви и соборы'}} image={'../public/sobor.png'}/>
@@ -34,6 +34,7 @@ export default async function Home() {
       </section>
       <section className="card-section">
         <header className="card-section-header">
+          <h2>{data[0].name}</h2>
           <h2>Популярные экскурсии</h2>
         </header>
         <main className="card-section-body">
