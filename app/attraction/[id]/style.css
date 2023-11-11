@@ -1,37 +1,86 @@
-.attraction-page {
+.page {
   display: flex;
   flex-direction: column;
-  gap: 180px;
+  gap: 20px;
   min-width: 100vw;
 }
 
-.attraction-page_background {
-  display: flex;
-  flex-direction: column;
-  padding: 100px 20px 20px 20px;
+.page_background {
+  position: absolute;
   height: 400px;
   width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+    no-repeat center/100% url("/thundertower.png");
+  z-index: -10;
 }
 
-.attraction-page_background-center {
+.page_header {
+  display: flex;
+  flex-direction: row;
+  padding: 160px 20px 20px 20px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.header-items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
-  gap: 40px;
-}
-
-.attraction-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+  gap: 10px;
 }
 .header-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.page_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 20px;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divider {
+  opacity: 0.2;
+  margin: 0 20px;
+}
+
+.pageh2 {
+  font-size: 32px;
+}
+.grid {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  border-radius: 16px;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.descrpt-image{
+  width: 100%;
+}
+.card-section_body {
+  display: flex;
+  flex-direction: row;
+  width: calc(100%-40px);
+  align-items: flex-start;
+  gap: 20px;
+}
+.card-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+  align-items: flex-start;
+  gap: 20px;
 }
