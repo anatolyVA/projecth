@@ -6,7 +6,13 @@ import Card from "@/components/Card/index";
 const SoborPNG = "/sobor.png";
 import Image from "next/image";
 
-export default function Home() {
+const fetchData = () => fetch("http://localhost:3000/api/tours", {
+  cache: "force-cache"
+}).then(res => res.json())
+
+export default async function Home() {
+  const data = await fetchData()
+
   return (
     <main className="home-page">
       <div className="home-page_hero">
@@ -20,6 +26,7 @@ export default function Home() {
       <section className="card-section">
         <header className="card-section-header">
           <h2>Популярные места и события</h2>
+          <h2>{data[0].name}</h2>
         </header>
         <main className="card-section-body">
           <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
