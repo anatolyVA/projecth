@@ -4,5 +4,7 @@ import { NextResponse } from "next/server";
 const prisma = new PrismaClient()
 
 export async function GET(req: Request) {
-    return NextResponse.json({ msg: "test" })
+    const attractions = prisma.attraction.findMany()
+
+    return NextResponse.json(attractions)
 }
