@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@maptiler/sdk": "^1.2.0",
     "@prisma/client": "^5.5.2",
     "next": "14.0.2",
     "react": "^18",

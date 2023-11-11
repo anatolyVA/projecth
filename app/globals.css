@@ -195,6 +195,7 @@ body {
 .tab-button {
   border: none;
   cursor: pointer;
+  font-size: 14px;
   border-bottom: 4px solid white;
   background-color: transparent;
   height: 40px;
@@ -207,6 +208,28 @@ body {
 }.tab-button_active{
   color: black;
   border-bottom: 4px solid var(--primary-default)
+}
+.navlink {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 14;
+}
+.navlink:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+.navlink:active {
+  color: rgba(0, 0, 0, 1);
+}
+.navlink-primary {
+  color: var(--primary-default);
+  text-decoration: none;
+  font-size: 14;
+}
+.navlink-primary:hover {
+  color: var(--primary-hover);
+}
+.navlink-primary:active {
+  color: var(--primary-active);
 }
 
 h1 {

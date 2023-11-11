@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 180px;
   min-width: 100vw;
+  margin-bottom: 20px;
 }
 
 .home-page_hero {

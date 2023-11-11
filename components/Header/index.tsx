@@ -1,13 +1,14 @@
 import React from "react";
 import "./style.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
     <header className="navbar">
       <div className="navlinks">
-        <Link className="navlink" href='/'>
-          Домашняя страница
+        <Link href='/'>
+          <Image id="logo" height={100} width={100} alt='' src={'/logo.svg'}></Image>
         </Link>
       </div>
       <div className="navbuttons">
