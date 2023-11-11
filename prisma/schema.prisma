@@ -10,11 +10,11 @@ datasource db {
 
 model Attraction {
   id             Int                @id @default(autoincrement())
-  name           String             @db.VarChar(200)
+  a_name         String             @db.VarChar(200)
   type           TypeOfAttraction[]
   typeId         Int
   img            String             @db.VarChar(200)
-  desc           String             @db.Text
+  description    String             @db.Text
   lng            Decimal
   lat            Decimal
   AttractionType AttractionType[]
