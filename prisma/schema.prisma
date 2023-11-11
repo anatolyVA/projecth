@@ -8,22 +8,15 @@ datasource db {
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
-model AttractionPictures {
-  id            Int        @id @default(autoincrement())
-  data          Bytes
-  attraction    Attraction @relation(fields: [attraction_id], references: [id])
-  attraction_id Int
-}
-
 model Attraction {
-  id                 Int                  @id @default(autoincrement())
-  name               String               @db.VarChar(200)
-  type               TypeOfAttraction[]
-  typeId             Int
-  desc               String               @db.Text
-  AttractionType     AttractionType[]
-  AttractionPictures AttractionPictures[]
-  TourPictures       TourPictures[]
+  id             Int                @id @default(autoincrement())
+  name           String             @db.VarChar(200)
+  type           TypeOfAttraction[]
+  typeId         Int
+  img            String             @db.VarChar(200)
+  desc           String             @db.Text
+  AttractionType AttractionType[]
+  TourPictures   TourPictures[]
 }
 
 model TypeOfAttraction {
