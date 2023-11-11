@@ -8,20 +8,45 @@ datasource db {
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
+model AttractionPictures {
+  id            Int        @id @default(autoincrement())
+  data          Bytes
+  attraction    Attraction @relation(fields: [attraction_id], references: [id])
+  attraction_id Int
+}
+
 model Attraction {
-  id   Int    @id @default(autoincrement())
-  name String
-  desc String
+  id                 Int                  @id @default(autoincrement())
+  name               String
+  type               TypeOfAttraction[]
+  typeId             Int
+  desc               String
+  AttractionType     AttractionType[]
+  AttractionPictures AttractionPictures[]
+  TourPictures       TourPictures[]
+}
+
+model TypeOfAttraction {
+  id             Int              @id @default(autoincrement())
+  name           String
+  attractions    Attraction[]
+  AttractionType AttractionType[]
 }
 
 model AttractionType {
-  id   Int    @id @default(autoincrement())
-  name String
+  attraction    Attraction       @relation(fields: [attraction_id], references: [id])
+  attraction_id Int
+  type          TypeOfAttraction @relation(fields: [type_id], references: [id])
+  type_id       Int
+
+  @@id([attraction_id, type_id])
 }
 
-model TypesOfAttraction {
-  id   Int    @id @default(autoincrement())
-  name String
+model TourPictures {
+  id      Int        @id @default(autoincrement())
+  data    Bytes
+  tour    Attraction @relation(fields: [tour_id], references: [id])
+  tour_id Int
 }
 
 model Tour {
@@ -37,6 +62,20 @@ model TourGuide {
   tour Tour[]
 }
 
-model PopularTours {
+model PopularTour {
   id Int @id @default(autoincrement())
+}
+
+model EventGroup {
+  id        Int      @id @default(autoincrement())
+  parent_id Int
+  name      String
+  type      String
+  date      DateTime @db.Date
+}
+
+model DateRange {
+  id         Int       @id @default(autoincrement())
+  start_date DateTime  @db.Date
+  end_date   DateTime? @db.Date
 }
