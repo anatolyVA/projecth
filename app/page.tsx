@@ -7,13 +7,6 @@ const SoborPNG = "/sobor.png";
 import Image from "next/image";
 
 export default function Home() {
-  const getData = async () => {
-    await fetch('/api/tours', {
-      method: 'GET',
-      body: JSON.stringify({hello: 'world'}),
-    })
-    
-  }
   return (
     <main className="home-page">
       <div className="home-page_hero">
@@ -26,9 +19,6 @@ export default function Home() {
       </div>
       <section className="card-section">
         <header className="card-section-header">
-          <button onClick={() => getData()}>
-            ХУЯК
-          </button>
           <h2>Популярные места и события</h2>
         </header>
         <main className="card-section-body">
