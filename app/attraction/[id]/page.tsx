@@ -37,8 +37,7 @@ function Attraction({ params: { id } }: Props) {
       <div className="page_content">
         <section className="left-section">
           <h2 className="pageh2">Описание</h2>
-          <p>
-            Успехи первых недель войны окончательно вселили в руководство Рейха
+          <p>Успехи первых недель войны окончательно вселили в руководство Рейха
             уверенность в скором благоприятном завершении Восточной кампании.
             Решающий удар генеральный штаб Вермахта готовил нанести на
             смоленском направлении, как открывающем кратчайший путь на Москву.В
@@ -78,7 +77,7 @@ function Attraction({ params: { id } }: Props) {
       <hr className="divider"></hr>
       <section className="card-section">
         <header className="card-section_header">
-          <h2 className="pageh2">Похожее</h2>
+          <h2 className="pageh2">Вам также может понравиться</h2>
         </header>
         <main className="card-section_body">
           <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
