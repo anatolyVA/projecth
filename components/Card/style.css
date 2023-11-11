@@ -10,7 +10,6 @@
 .card-image {
     height: 300px;
     width: 100%;
-    background-image: url('../../public/sobor.png');
 }
 .body{
     padding: 20px;

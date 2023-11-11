@@ -180,19 +180,6 @@ body {
   color: white;
 }
 
-.iconbutton_small {
-  border-radius: 4px;
-  height: 32px;
-  padding: 0px 8px;
-  font-size: 12px;
-}
-.iconbutton_medium {
-  height: 48px;
-  padding: 0px 32px;
-  font-size: 14px;
-}
-.iconbutton_large {
-  height: 64px;
-  padding: 0px 48px;
-  font-size: 18px;
+h1 {
+  font-size: 48px;
 }

@@ -15,7 +15,7 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 1) 100%
     ),
-    no-repeat center/100% url("../public/map.png");
+    no-repeat center/100% url("/map.png");
 }
 
 .home-page_hero-center {
@@ -68,5 +68,5 @@
   width: 100%;
   border-color: azure;
   border-radius: 16px;
-  background: no-repeat center/100% url("../public/map.png");
+  background: no-repeat center/100% url("/map.png");
 }
