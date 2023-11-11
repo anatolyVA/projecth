@@ -4,9 +4,11 @@ import Card from "@/components/Card/index";
 const SoborPNG = "/sobor.png";
 import Image from "next/image";
 
-const fetchData = () => fetch("http://localhost:3000/api/tours", {
-  cache: "force-cache"
-}).then(res => res.json())
+const fetchData = () => 
+  fetch("http://localhost:3000/api/tours", {
+    cache: "force-cache"
+  })
+  .then(res => res.json())
 
 export default async function Home() {
   const data = await fetchData()
@@ -35,6 +37,7 @@ export default async function Home() {
       </section>
       <section className="card-section">
         <header className="card-section-header">
+          <h2>{data[0].name}</h2>
           <h2>Популярные экскурсии</h2>
         </header>
         <main className="card-section-body">

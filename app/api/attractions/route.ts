@@ -8,6 +8,3 @@ export async function GET(req: Request) {
 
     return NextResponse.json(tours)
 }
-
-export async function POST(req: Request) {
-}
