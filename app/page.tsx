@@ -40,7 +40,7 @@ export default function Home() {
       <section className="review-section">
           <div className="review-section_content">
             <h2>Изучайте историю и достопримечательности города</h2>
-            <p>Подзаголовок</p>
+            <p>Используйте интерактивную карту, на которой обзначены маркеры с интересными достопримечательностями</p>
             <Link href={'/map'} className={"button button_filled button_medium"}>
               Перейти
             </Link>
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="review-section_image" />
           <div className="review-section_content">
             <h2>Покупайте билеты в музеи и бронируйте экскурсии</h2>
-            <p>Подзаголовок</p>
+            <p>Используйте удобную систему рекомендаций</p>
             <Link href={'/tour'} className={"button button_filled button_medium"}>
               Перейти
             </Link>
