@@ -5,24 +5,38 @@
   min-width: 100vw;
 }
 
-.attraction-page_hero {
+.attraction-page_background {
   display: flex;
   flex-direction: column;
-  padding: 80px 20px 20px 20px;
-  height: 500px;
+  padding: 100px 20px 20px 20px;
+  height: 400px;
   width: 100%;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 1) 100%
     ),
-    no-repeat center/100% url("../../../public/map.png");
+    no-repeat center/100% url("/thundertower.png");
 }
 
-.attraction-page_hero-center {
+.attraction-page_background-center {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  gap: 10px;
+  gap: 40px;
+}
+
+.attraction-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
