@@ -5,12 +5,10 @@ const prisma = new PrismaClient()
 
 export async function GET(
     req: Request, 
-    { params }: { params: { slug: string } }
+    { params }: { params: { id: number } }
     ) {
-    const slug = params.slug
-    // if (body !== null) {
-    //     const tours = await prisma.typesOfAttraction.findUnique({ where: { id: body.id } })
-    //     return NextResponse.json(tours)
-    // }
-    return NextResponse.json({ slug })
+    const id: number = Number(params.id)
+    const tours = await prisma.typesOfAttraction.findUnique({ where: { id: id } })
+    
+    return NextResponse.json({ tours })
 }
