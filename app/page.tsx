@@ -21,8 +21,8 @@ export default function Home() {
         </header>
         <main className="card-section-body">
           <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
-          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
-          <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="Громовая башня" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
+          <Card name="" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
           <Card name="Успенский собор" types={{type: 'Церкви и соборы'}} image={SoborPNG}/>
         </main>
       </section>
